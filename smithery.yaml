@@ -1,0 +1,88 @@
+name: smart-market-mcp-server
+version: 1.0.0
+description: "Smart Market MCP Server - Türkiye market fiyatları için akıllı alışveriş asistanı"
+author: "serkannss"
+license: MIT
+homepage: "https://github.com/your-username/smart-market-mcp-server"
+
+# Server konfigürasyonu
+server:
+  type: stdio
+  port: 3000
+  endpoint: /mcp
+
+# Build konfigürasyonu
+build:
+  command: npm run build
+  outputDir: dist
+
+# Runtime konfigürasyonu
+runtime:
+  node: ">=18.0.0"
+  startCommand: npm start
+
+# Kategoriler
+categories:
+  - shopping
+  - market
+  - price-tracking
+  - turkish-market
+
+# Özellikler
+features:
+  - "🛒 Market fiyatları arama"
+  - "🇹🇷 Türkiye market zincirleri desteği"
+  - "🤖 AI destekli alışveriş asistanı"
+
+# API endpoints
+tools:
+  - name: market_search
+    description: "Türkiye market fiyatları API'sini kullanarak ürün arar"
+    
+  - name: price_tracker
+    description: "Belirli bir ürünün güncel fiyatını takip eder"
+    
+  - name: create_price_alert
+    description: "Belirli bir ürün için fiyat alarmı oluşturur"
+    
+  - name: create_shopping_list
+    description: "Yeni bir alışveriş listesi oluşturur"
+    
+  - name: add_item_to_list
+    description: "Alışveriş listesine yeni ürün ekler"
+    
+  - name: update_list_item
+    description: "Alışveriş listesindeki ürünü günceller"
+    
+  - name: calculate_budget
+    description: "Alışveriş listesi için bütçe hesaplar"
+
+# Desteklenen market zincirleri
+markets:
+  - BIM
+  - A101
+  - ŞOK
+  - Migros
+  - Tarım Kredi Kooperatifleri
+
+# Güvenlik
+security:
+  rateLimit: true
+  cors: true
+  
+# Metadata
+metadata:
+  keywords:
+    - mcp
+    - market
+    - shopping
+    - turkey
+    - price-tracking
+    - ai-assistant
+    - smithery
+  
+  tags:
+    - shopping
+    - market-data
+    - price-comparison
+    - turkish-markets 
